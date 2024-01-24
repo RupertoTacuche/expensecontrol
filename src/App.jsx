@@ -38,6 +38,8 @@ const handleNuevoGasto = () =>{
 }
 
 const guardarGasto = gasto => {
+  console.log(gasto)
+  return; 
   gasto.id = generarId();
   gasto.fecha = Date.now();
   setGastos([...gastos, gasto])

@@ -42,7 +42,7 @@ const Modal = ({setModal,
             },3000)
             return; 
         }
-        guardarGasto({nombre, cantidad, categoria,})
+        guardarGasto({nombre, cantidad, categoria, id})
     }
 
   return (
