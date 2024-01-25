@@ -59,6 +59,12 @@ const guardarGasto = gasto => {
   },500);
 }
 
+  const eliminarGasto = id => {
+    const gastosActualizados = gastos.filter(gasto =>gasto.id !== id)
+    setGastos(gastosActualizados)
+  }
+
+
   return (
     <div className={modal ?  'fijar' : '' }>
       <Header 
@@ -73,8 +79,9 @@ const guardarGasto = gasto => {
         <>
           <main>
             <ListadoGastos 
-              gastos={gastos}
-              setGastoEditar={setGastoEditar}
+                gastos={gastos}
+                setGastoEditar={setGastoEditar}
+                eliminarGasto={eliminarGasto}
               
             />
           </main>
