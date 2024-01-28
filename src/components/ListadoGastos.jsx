@@ -12,6 +12,7 @@ const ListadoGastos = ({gastos, setGastoEditar, eliminarGasto}) => {
                 gasto={gasto}
                 setGastoEditar={setGastoEditar}
                 eliminarGasto={eliminarGasto}
+                
             />
         ))}
     </div>

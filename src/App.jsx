@@ -22,6 +22,9 @@ const [animarModal, setAnimarModal]= useState(false)
 
 const [gastoEditar, setGastoEditar] = useState({})
 
+const [filtro, setFiltro]= useState('')
+ 
+
 useEffect(() => {
   if(Object.keys(gastoEditar).length > 0 ){
     setModal(true)
@@ -103,7 +106,8 @@ const guardarGasto = gasto => {
                 gastos={gastos}
                 setGastoEditar={setGastoEditar}
                 eliminarGasto={eliminarGasto}
-              
+                
+               
             />
           </main>
           <div className="nuevo-gasto">
