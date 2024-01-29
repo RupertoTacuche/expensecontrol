@@ -124,6 +124,8 @@ const guardarGasto = gasto => {
                 gastos={gastos}
                 setGastoEditar={setGastoEditar}
                 eliminarGasto={eliminarGasto}
+                filtro={filtro}
+                gastosFiltrados={gastosFiltrados}
                 
                
             />
